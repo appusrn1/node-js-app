@@ -1,0 +1,15 @@
+doctype html
+html    
+    head
+        title=title
+    
+    body
+        h1 Student list using jade engine
+
+        ul
+          each item in details
+            if (item.age > 20)
+              li #{item.name}
+            else
+               li #{item.age}
+              
